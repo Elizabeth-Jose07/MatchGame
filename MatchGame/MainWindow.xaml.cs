@@ -43,7 +43,7 @@ namespace MatchGame
             foreach(TextBlock textBlock in mainGrid.Children.OfType<TextBlock>())
             {
                 int index=random.Next(animalEmoji.Count);
-                string nextEmoji = animalEmoji[index];  //this is to show the changes made in program and how to push into repo
+                string nextEmoji = animalEmoji[index];  
                 textBlock.Text= nextEmoji;
                 animalEmoji.RemoveAt(index);
             }
